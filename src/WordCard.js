@@ -1,4 +1,5 @@
 import _ from 'lodash';
+export default class WordCArd extends Component {
         const prepareStateFromWord = (given_word) => {
             let word = given_word.toUpperCase()
             let chars = _.shuffle(Array.from(word))
@@ -10,7 +11,7 @@ import _ from 'lodash';
                 completed: false
             }
         }
-        const activationHandler = (c) => {
+        activationHandler = (c) => {
             let guess = [...this.state.guess, c]
             this.setState({guess})
             if(guess.length == this.state.chars.length){
@@ -22,6 +23,6 @@ import _ from 'lodash';
                 }
         }
         }
-
+    }
 
 
