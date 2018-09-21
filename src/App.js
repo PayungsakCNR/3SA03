@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div className="card">
-        <WordCard  value="hello"/>
+        <prepareStateFromWord  value="Hello"/>
       </div>
     );
   }
